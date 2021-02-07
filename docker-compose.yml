@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  redis-server:
+    image: "redis"
+  
+  nodejs-app:
+    build: .
+    image: 'dragmove/compose-nodejs-redis:0.0.1'
+    ports:
+      - "9001:8080"
