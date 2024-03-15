@@ -1,20 +1,25 @@
 {
-  "name": "compose-nodejs-redis",
+  "name": "test-k8s-nodejs-redis",
   "version": "0.0.1",
-  "description": "none",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "docker",
+    "k8s",
     "node.js",
     "redis"
   ],
   "author": "dragmove",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "redis": "^3.0.2"
+    "axios": "^1.6.7",
+    "express": "^4.18.3",
+    "redis": "^4.6.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
